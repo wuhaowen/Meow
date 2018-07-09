@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Meow</string>
+    <string name="start_floatingBall">开启悬浮球功能</string>
+
+</resources>

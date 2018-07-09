@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+    <EditText
+        android:id="@+id/txt_name"
+        android:hint="本设备名称"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+    <RadioGroup
+        android:id="@+id/rg_mode"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <RadioButton
+            android:text="ip连接模式"
+            android:id="@+id/rb_ip"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rb_discover"
+            android:text="搜索模式"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/txt_ip"
+            android:hint="请输入ip地址"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <EditText
+            android:id="@+id/txt_port"
+            android:hint="请输入端口"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcy_server"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/txt_select"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_save"
+        android:text="保存"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+</LinearLayout>
